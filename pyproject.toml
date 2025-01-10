@@ -41,7 +41,8 @@ dependencies = [
     "tomli (==2.0.1)",
     "tzdata (==2023.3)",
     "urllib3 (==1.26.15)",
-    "setuptools (>=75.8.0,<76.0.0)"
+    "setuptools (>=75.8.0,<76.0.0)",
+    "django-admin-interface (>=0.29.2,<0.30.0)"
 ]
 
 
