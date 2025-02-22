@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-from tracker.utils.choices import TRANSACTION_TYPE_CHOICES
+# from tracker.utils.choices import TRANSACTION_TYPE_CHOICES
 
 class User(AbstractUser):
     pass
@@ -17,6 +17,11 @@ class Category(models.Model):
     
  
 class Transaction(models.Model):
+    TRANSACTION_TYPE_CHOICES = (
+        ('income', 'Income'),
+        ('expense', 'Expense'),
+    )
+
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     type = models.CharField(max_length=7, choices=TRANSACTION_TYPE_CHOICES)

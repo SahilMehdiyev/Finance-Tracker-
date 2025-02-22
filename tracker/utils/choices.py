@@ -1,6 +1,6 @@
 
 
-TRANSACTION_TYPE_CHOICES = (
-    ('income', 'Income'),
-    ('expense', 'Expense'),
-)
+# TRANSACTION_TYPE_CHOICES = (
+#     ('income', 'Income'),
+#     ('expense', 'Expense'),
+# )
